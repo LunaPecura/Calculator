@@ -56,12 +56,12 @@ button{
     font-size: 20px;
 }
 
-#equals{
-    /* background-color: orange;
-    color: white; */
-}
-
 button:hover{
     background-color:limegreen;
     color:white;
+}
+
+button.active {
+    background-color: green;
+    color: white;
 }
