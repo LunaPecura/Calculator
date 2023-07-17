@@ -21,6 +21,9 @@
     margin-right: 5px;
     border-radius: 15px;
     background-color: lightgray;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: right;
 }
 
 .calcBottom{
@@ -30,11 +33,13 @@
 }
 
 .column{
+    display: flex;
+    flex-direction: column;
     width: fit-content;
     height: fit-content;
 }
 
-.cell{
+button{
     height: 50px;
     width: 75px;
     background-color: white;
@@ -52,12 +57,11 @@
 }
 
 #equals{
-    background-color: orange;
-    font-size: 50px;
-    color: white;
+    /* background-color: orange;
+    color: white; */
 }
 
-.cell:hover{
-    background-color:green;
+button:hover{
+    background-color:limegreen;
     color:white;
 }

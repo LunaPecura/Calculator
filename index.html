@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    <body>
-        <script src="app.js" async defer></script>     
+  <body>
+    <script src="app.js" async defer></script>     
             
-        <div class="calcWrapper">
-                
-            <div class="calcTop">
-                <div class="display">
-                </div>
-            </div>
-                
-                
-            <div class="calcBottom">
-                    
-                <div class="column" id="column1">
-                    <div class="cell" id="seven">7</div>
-                    <div class="cell" id="four">4</div>
-                    <div class="cell" id="one">1</div>
-                    <div class="cell" id="zero">0</div>
-                </div>
-                    
-                <div class="column" id="column2">
-                    <div class="cell" id="eight">8</div>
-                    <div class="cell" id="five">5</div>
-                    <div class="cell" id="two">2</div>
-                    <div class="cell" id="clear">CLR</div>
-                </div>
-                    
-                <div class="column" id="column3">
-                    <div class="cell" id="nine">9</div>
-                    <div class="cell" id="six">6</div>
-                    <div class="cell" id="three">3</div>
-                    <div class="cell" id="plus">+</div>
-                </div>
-                    
-                <div class="column" id="column4">
-                    <div class="cell" id="divided">/</div>
-                    <div class="cell" id="times">*</div>
-                    <div class="cell" id="minus">-</div>
-                    <div class="cell" id="equals">=</div>
-                </div>
+    <div class="calcWrapper">
+      <div class="calcTop"><div class="display"></div></div>
+      <div class="calcBottom">
 
-            </div>
-        </div>       
-    </body>
+        <div class="column" id="column1">
+          <!-- <div class="cell" id="seven">7</div> -->
+					<button class="number" id="seven" onclick="myCalculator.readDigit(7)">7</button>
+          <button class="number" id="four" onclick="myCalculator.readDigit(4)">4</button>
+          <button class="number" id="one" onclick="myCalculator.readDigit(1)">1</button>
+          <button class="operation" id="clear" onclick="myCalculator.readOp('c')">CLR</button>
+        </div>
+
+				<div class="column" id="column2">
+          <button class="number" id="eight" onclick="myCalculator.readDigit(8)">8</button>
+          <button class="number" id="five" onclick="myCalculator.readDigit(5)">5</button>
+          <button class="number" id="two" onclick="myCalculator.readDigit(2)">2</button>
+					<button class="number" id="zero" onclick="myCalculator.readDigit(0)">0</button>
+        </div>
+
+        <div class="column" id="column3">
+          <button class="number" id="nine" onclick="myCalculator.readDigit(9)">9</button>
+          <button class="number" id="six" onclick="myCalculator.readDigit(6)">6</button>
+          <button class="number" id="three" onclick="myCalculator.readDigit(3)">3</button>
+					<button class="operation" id="equals" onclick="myCalculator.readOp('e')">=</button>
+        </div>
+
+        <div class="column" id="column4">
+					<button class="operation" id="plus" onclick="myCalculator.readOp('p')">+</button>
+					<button class="operation" id="minus" onclick="myCalculator.readOp('m')">-</button>
+					<button class="operation" id="times" onclick="myCalculator.readOp('t')">*</button>
+          <button class="operation" id="divided" onclick="myCalculator.readOp('d')">/</button>
+        </div>
+
+      </div>
+    </div>       
+  </body>
 </html>
 
 
